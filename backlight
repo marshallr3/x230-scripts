@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# This script controls backlight for my Nitrocaster FHD modded Thinkpad x230.
+# To be used along with i3 for intended button control.
+
+num=$1
+current=$(cat '/sys/class/backlight/intel_backlight/actual_brightness')
+#  ex. percent=5; percent is 20%
+percent=5
+factor=$((current / percent))
+if (($num == 1));
+then
+new=$((current + factor))
+echo $new
+tee '/sys/class/backlight/intel_backlight/brightness' <<< $new
+else
+new=$((current - factor))
+echo $new
+tee '/sys/class/backlight/intel_backlight/brightness' <<< $new
+fi
