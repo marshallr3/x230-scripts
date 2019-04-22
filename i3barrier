@@ -1,0 +1,19 @@
+#!/bin/python
+import pyautogui
+import os
+import sys
+
+# (x, y)
+
+input1 = sys.argv[1]
+
+dict1 = {}
+dict1["h"] = [-1,10]
+dict1["j"] = [10, 10000]
+dict1["k"] = [10, -1]
+dict1["l"] = [10000, 10]
+
+pyautogui.moveTo(dict1[input1][0], dict1[input1][1])
+
+
+
