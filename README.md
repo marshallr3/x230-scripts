@@ -1,2 +1,2 @@
-This is intended to be a collection of small scripts for my Nitro-FHD 7-row modded Thinkpad X230. Keep it running and riced.
-These scripts will be X230 specific and may not work on other systems.
+This is a collection of small scripts for my Nitro-FHD 7-row modded Thinkpad X230. To keep it running and riced.
+These scripts may be X230 specific and may not work on other systems.
